@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="div">/</button></td>
+                        <td><button class="btn-operator" id="mult">*</button></td>
+                        <td><button class="btn-operator" id="backespace">DEL</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="siete">7</button></td>
+                        <td><button class="btn-number" id="ocho">8</button></td>
+                        <td><button class="btn-number" id="nueve">9</button></td>
+                        <td><button class="btn-operator" id="rest">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="cuatro">4</button></td>
+                        <td><button class="btn-number" id="cinco">5</button></td>
+                        <td><button class="btn-number" id="seis">6</button></td>
+                        <td><button class="btn-operator" id="sum">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="uno">1</button></td>
+                        <td><button class="btn-number" id="dos">2</button></td>
+                        <td><button class="btn-number" id="tres">3</button></td>
+                        <td rowspan="2"><button class="btn-igual" id="igual">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="punto">.</button></td>
+                        <td><button class="btn-operator" id="cero">0</button></td>
+                        <td><button class="btn-operator" id="cero-cero">00</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
