@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+.container {
+  position: relative;
+  width: 0;
+  height: 0;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: bisque;
+  opacity: 0;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.container .content {
+  min-width: 500px;
+  padding: 40px;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(0);
+}
+.container .toggleBtn {
+  position: absolute;
+  bottom: -20px;
+  min-width: 60px;
+  height: 60px;
+  background-color: blueviolet;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.container .toggleBtn::before {
+  content: "+";
+  font-size: 2.5em;
+  color: white;
+}
+.container.active .content {
+  opacity: 1;
+  transition-delay: 0.5s;
+  transform: scale(1);
+}
+.container.active .toggleBtn {
+  bottom: -90px;
+  transform: rotate(135deg);
+  background-color: red;
+}
+.container.active {
+  width: 500px;
+  height: 500px;
+  transition-delay: 0.5s;
+}
+.container.active::before {
+  opacity: 1;
+  transition-delay: 0.5s;
+}/*# sourceMappingURL=style.css.map */
