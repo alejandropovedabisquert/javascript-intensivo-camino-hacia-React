@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Video</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./img/video1.mp4" autoplay muted loop class="active"></video>
+            <video src="./img/video2.mp4" autoplay muted loop></video>
+            <video src="./img/video3.mp4" autoplay muted loop></video>
+            <video src="./img/video4.mp4" autoplay muted loop></video>   
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class="logo">Alejandro</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu();"></span>
+            </header>
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active">
+                        <h2>Tokyo</h2>
+                        <p>Tokyo Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus quo, perspiciatis amet minus rem tempora? Tenetur fugiat molestias fuga! Facilis molestiae optio debitis, ut enim non sint provident unde.</p>
+
+                    </div>
+                    <div>
+                        <h2>Paris</h2>
+                        <p>Paris Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus quo, perspiciatis amet minus rem tempora? Tenetur fugiat molestias fuga! Facilis molestiae optio debitis, ut enim non sint provident unde.</p>
+                        
+                    </div>
+                    <div>
+                        <h2>Egipto</h2>
+                        <p>Egipto Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus quo, perspiciatis amet minus rem tempora? Tenetur fugiat molestias fuga! Facilis molestiae optio debitis, ut enim non sint provident unde.</p>
+                        
+                    </div>
+                    <div>
+                        <h2>Maldives</h2>
+                        <p>Maldives Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus quo, perspiciatis amet minus rem tempora? Tenetur fugiat molestias fuga! Facilis molestiae optio debitis, ut enim non sint provident unde.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlider();prevTextSlider();"><img src="./img/left.png"></li>
+                <li onclick="nexSlider();nexTextSlider();"><img src="./img/right.png"></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
